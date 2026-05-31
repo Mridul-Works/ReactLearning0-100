@@ -1,0 +1,60 @@
+jsx is javascript xml , it is a syntax for js that lets you write HTML-Like code inside JS, most commonly used in react
+
+the structure for jsx : 
+
+funciton hello(){
+    return(
+           <h1> hello world</>
+    )   
+}
+export default hello;
+
+also in 1 jsx file we can export 2 or more functions but the default function would be 1 only, 
+
+export funciton try1(){
+    retrun(
+          <>
+    </>
+    )
+  
+}
+
+export funciton try2(){
+    return(
+         <>
+    </>
+    )
+   
+}
+
+or 
+
+ funciton try1(){
+    retrun(
+           <>
+    </>
+    )
+ 
+}
+export default try1;
+
+export funciton try2(){
+    retrun(
+           <>
+    </>
+    )
+}
+
+
+jsx makes ui code easier to read and write
+what we can do with js:
+we can use variable like
+
+const name = "mridul";
+
+funciton greet(name){
+    return(
+        <h2> hello, {name} </h2>
+
+    )
+}
