@@ -1,0 +1,17 @@
+function App(){
+    return (
+        <h1>Hello World</h1>
+    )
+}
+
+export default App;
+
+this is the first component
+
+Breakdown :-
+ 1)
+ function App()
+ -- this creates component 
+ 2) 
+ return ;
+ -- this return UI
