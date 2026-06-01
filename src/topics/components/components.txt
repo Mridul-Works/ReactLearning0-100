@@ -15,3 +15,9 @@ Breakdown :-
  2) 
  return ;
  -- this return UI
+
+ -------------------------------
+
+ For nested component 
+ we will use <></> (fragment) or div
+ because - we can only return ONE ROOT ELEMENT.
