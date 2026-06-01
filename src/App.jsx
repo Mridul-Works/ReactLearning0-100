@@ -14,7 +14,7 @@ function App() {
     <Name />
 
     <h2>Below would be the nested component</h2>
-    <NestedComponent />
+    <NestedComponent count={"Mridul"} />
     </>
   )
 }

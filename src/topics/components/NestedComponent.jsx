@@ -1,10 +1,16 @@
 import BasicComponent from "./BasicComponent";
 import NameProp from "./NameProp";
 
-function NestedComponent() {
+function NestedComponent({count}) {
+
+    // const {count} = props
+
+// const abs = props.count
+     // destructuiring on fly 
+
     return(
         <>
-         <h2>this will contain various components thats why this is nested components</h2>
+         <h2>`this will contain various components thats why this is nested components {count}</h2>
 
         <h4>Below would be Basic Component :-</h4>
         <BasicComponent/>
