@@ -1,4 +1,5 @@
-import BasicComponent from "./BasicComponent"
+import BasicComponent from "./BasicComponent";
+import NameProp from "./NameProp";
 
 function NestedComponent() {
     return(
@@ -7,6 +8,11 @@ function NestedComponent() {
 
         <h4>Below would be Basic Component :-</h4>
         <BasicComponent/>
+
+        <h2>----- below is props component (functional componet) -----------</h2>
+        <NameProp  name="XYZ" age ={23} />
+        <h3>------------------------------</h3>
+
         </>
        
 
