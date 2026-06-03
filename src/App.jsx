@@ -3,9 +3,13 @@ import HelloWorld from "./topics/jsx/HelloWorld"
 import Name from './topics/jsx/Name'
 import NestedComponent from './topics/components/NestedComponent'
 import TryProps from './topics/props/TryProps'
+import FunctionAsProp from './topics/props/FunctionAsProp'
 
 function App() {
   const [count, setCount] = useState(0)
+    const sayHello = () => {
+    alert("Hello");
+  };
 
   return (
     <>
@@ -21,6 +25,8 @@ function App() {
   age={22}
   location="Punjab"
 />
+
+ <FunctionAsProp  clickHandler={sayHello}  />
     </>
   )
 }
