@@ -4,6 +4,11 @@ import Name from './topics/jsx/Name'
 import NestedComponent from './topics/components/NestedComponent'
 import TryProps from './topics/props/TryProps'
 import FunctionAsProp from './topics/props/FunctionAsProp'
+// import OnClikcEvents from './topics/events/OnClickEventss'
+// import InLineEventHandler from './topics/events/InLineEventHandler'
+import { InLineEventHandler } from './topics/events/InLineEventHandler';
+import OnChangeEvent from './topics/events/OnChangeEvent'
+import OnClickEventTry from './topics/events/OnClickEventTry'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,17 +21,25 @@ function App() {
     <h1>hello world</h1>
     < HelloWorld />
     {/* < SayHi /> */}
-    <Name />
+    {/* <Name /> */}
 
-    <h2>Below would be the nested component</h2>
+    {/* <h2>Below would be the nested component</h2>
     <NestedComponent count={"Mridul"} />
     <TryProps
   name="Xyz"
   age={22}
   location="Punjab"
-/>
+/> */}
 
  <FunctionAsProp  clickHandler={sayHello}  />
+
+ {/* <OnClikcEvents /> */}
+ <InLineEventHandler />
+ <OnChangeEvent />
+ <OnClickEventTry />
+
+
+
     </>
   )
 }
