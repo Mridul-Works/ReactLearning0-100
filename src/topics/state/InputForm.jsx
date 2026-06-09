@@ -14,7 +14,7 @@ function InputForm(){
         <>
         <h2>Form</h2>
         <form action="" onSubmit={ageUpdated}>
-            <input type="text" 
+            <input type="number" 
             name="age"
             // onChange={(e) => setAge(e.target.value)}
             />
@@ -22,7 +22,8 @@ function InputForm(){
             <button type="submit">Submit</button>
         </form>
 
-        <h3>AGE : {age}</h3>
+{ age !== 0  && <h3>AGE : {age}</h3> }
+        
         </>
     )
 }
