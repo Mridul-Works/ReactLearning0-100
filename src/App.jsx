@@ -9,6 +9,9 @@ import FunctionAsProp from './topics/props/FunctionAsProp'
 import { InLineEventHandler } from './topics/events/InLineEventHandler';
 import OnChangeEvent from './topics/events/OnChangeEvent'
 import OnClickEventTry from './topics/events/OnClickEventTry'
+import CountState from './topics/state/CountState'
+import ShowName from './topics/state/ShowName'
+import InputForm from './topics/state/InputForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +41,9 @@ function App() {
  <OnChangeEvent />
  <OnClickEventTry />
 
+ <CountState />
+<ShowName />
+<InputForm />
 
 
     </>
