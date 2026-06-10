@@ -13,6 +13,7 @@ import CountState from './topics/state/CountState'
 import ShowName from './topics/state/ShowName'
 import InputForm from './topics/state/InputForm'
 import Fruits from "./topics/listNkeys/Fruits"
+import Students from './topics/listNkeys/Students'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -48,6 +49,8 @@ function App() {
 
 <h2>List and keys</h2>
 <Fruits />
+
+<Students />
 
 
     </>
