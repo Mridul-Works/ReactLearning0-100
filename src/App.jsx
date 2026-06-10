@@ -12,6 +12,7 @@ import OnClickEventTry from './topics/events/OnClickEventTry'
 import CountState from './topics/state/CountState'
 import ShowName from './topics/state/ShowName'
 import InputForm from './topics/state/InputForm'
+import Fruits from "./topics/listNkeys/Fruits"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,13 +38,16 @@ function App() {
  <FunctionAsProp  clickHandler={sayHello}  />
 
  {/* <OnClikcEvents /> */}
- <InLineEventHandler />
+ {/* <InLineEventHandler />
  <OnChangeEvent />
- <OnClickEventTry />
-
+ <OnClickEventTry /> */}
+{/* 
  <CountState />
 <ShowName />
-<InputForm />
+<InputForm /> */}
+
+<h2>List and keys</h2>
+<Fruits />
 
 
     </>
