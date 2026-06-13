@@ -1,31 +1,44 @@
 import { useState } from "react";
 
-function ToDoList(){
+function ToDoList() {
+    const [task, setTask] = useState("");
+    const [tasks, setTasks] = useState([]);
 
-    const [task , setTask] = useState("");
-    const [tasks , setTasks] = useState[];
+    function AddTask(e) {
+        e.preventDefault();
 
-    function AddTask(){
-        if(task.trim() === "") return;
+        if (task.trim() === "") return;
 
-        setTask([...tasks, task])
+        setTasks([...tasks, task]);
+        setTask("");
     }
 
-    return(
+    return (
         <>
+            <h2>To Do List</h2>
 
-        <h2>To Do List</h2>
+            <form>
+                <input
+                    type="text"
+                    value={task}
+                    onChange={(e) => setTask(e.target.value)}
+                    placeholder="Enter Task"
+                />
 
-        <form action="">
-            <input type="text"
-            value={task}
-            onChange={(e) => setTask(e.target.value)}
-            placeholder="Enter Task"
-            />
-            <button onClick={AddTask}>Add Task</button>
-        </form>
+                <button type="submit" onClick={AddTask}>
+                    Add Task
+                </button>
+            </form>
+
+            <h3>Task List</h3>
+
+            <ul>
+                {tasks.map((item, index) => (
+                    <li key={index}>{item}</li>
+                ))}
+            </ul>
         </>
-    )
+    );
 }
 
 export default ToDoList;
