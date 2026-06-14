@@ -14,7 +14,7 @@ import ShowName from './topics/state/ShowName'
 import InputForm from './topics/state/InputForm'
 import Fruits from "./topics/listNkeys/Fruits"
 import Students from './topics/listNkeys/Students'
-import ToDoList from './topics/ToDoList/ToDoList'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,7 +53,7 @@ function App() {
 
 <Students />
 
-<ToDoList />
+
 
 
     </>
